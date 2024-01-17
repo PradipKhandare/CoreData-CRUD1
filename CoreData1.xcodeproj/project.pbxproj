@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		27A66D6B2B57A7140010BD5C /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A66D6A2B57A7140010BD5C /* TableViewCell.swift */; };
+		27A66D6D2B57B0BA0010BD5C /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A66D6C2B57B0BA0010BD5C /* ListViewController.swift */; };
 		27A7D78C2B5682EB0086D14A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A7D78B2B5682EB0086D14A /* AppDelegate.swift */; };
 		27A7D78E2B5682EB0086D14A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A7D78D2B5682EB0086D14A /* SceneDelegate.swift */; };
 		27A7D7902B5682EB0086D14A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A7D78F2B5682EB0086D14A /* ViewController.swift */; };
@@ -21,6 +23,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		27A66D6A2B57A7140010BD5C /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		27A66D6C2B57B0BA0010BD5C /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		27A7D7882B5682EB0086D14A /* CoreData1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreData1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		27A7D78B2B5682EB0086D14A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		27A7D78D2B5682EB0086D14A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -75,6 +79,8 @@
 				27A7D78F2B5682EB0086D14A /* ViewController.swift */,
 				27A7D7A92B5692FE0086D14A /* DataBaseHelper.swift */,
 				27A7D7912B5682EB0086D14A /* Main.storyboard */,
+				27A66D6C2B57B0BA0010BD5C /* ListViewController.swift */,
+				27A66D6A2B57A7140010BD5C /* TableViewCell.swift */,
 				27A7D7972B5682F00086D14A /* Assets.xcassets */,
 				27A7D7992B5682F00086D14A /* LaunchScreen.storyboard */,
 				27A7D79C2B5682F00086D14A /* Info.plist */,
@@ -163,9 +169,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				27A7D7AA2B5692FE0086D14A /* DataBaseHelper.swift in Sources */,
+				27A66D6B2B57A7140010BD5C /* TableViewCell.swift in Sources */,
 				27A7D7A52B5683590086D14A /* Student+CoreDataProperties.swift in Sources */,
 				27A7D7902B5682EB0086D14A /* ViewController.swift in Sources */,
 				27A7D78C2B5682EB0086D14A /* AppDelegate.swift in Sources */,
+				27A66D6D2B57B0BA0010BD5C /* ListViewController.swift in Sources */,
 				27A7D7962B5682EB0086D14A /* CoreData1.xcdatamodeld in Sources */,
 				27A7D78E2B5682EB0086D14A /* SceneDelegate.swift in Sources */,
 				27A7D7A42B5683590086D14A /* Student+CoreDataClass.swift in Sources */,

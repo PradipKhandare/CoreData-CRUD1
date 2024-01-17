@@ -24,6 +24,11 @@ class ViewController: UIViewController {
         DataBaseHelper.shareInstance.save(object: dict)
     }
     
+    @IBAction func showButtonPressed(_ sender: UIButton) {
+        let listVC = storyboard?.instantiateViewController(identifier: "ListViewController") as! ListViewController
+        self.navigationController?.pushViewController(listVC, animated: true)
+    }
+    
     
 }
 
