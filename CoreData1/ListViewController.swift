@@ -7,16 +7,20 @@
 
 import UIKit
 
-class ListViewController: UIViewController {
+protocol DataPass {
+    func data(object: [String: String], index: Int, isEdit: Bool)
+}
 
+class ListViewController: UIViewController {
+    
     @IBOutlet weak var tableView: UITableView!
     var student = [Student]()
+    var delegate: DataPass!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         student = DataBaseHelper.shareInstance.getData()!
     }
-    
 }
 
 extension ListViewController: UITableViewDelegate, UITableViewDataSource
@@ -45,6 +49,15 @@ extension ListViewController: UITableViewDelegate, UITableViewDataSource
             student = DataBaseHelper.shareInstance.deleteData(index: indexPath.row)!
             self.tableView.deleteRows(at: [indexPath], with: .automatic)
         }
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let dict = ["name":student[indexPath.row].name,
+                    "address":student[indexPath.row].address,
+                    "city":student[indexPath.row].city,
+                    "mobile": student[indexPath.row].mobile]
+        delegate.data(object: dict as! [String:String], index: indexPath.row, isEdit: true)
+        self.navigationController?.popViewController(animated: true)
     }
     
 }

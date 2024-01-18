@@ -53,4 +53,18 @@ class DataBaseHelper
             return nil
         }
     }
+    
+    func editData(object: [String: String], i: Int){
+        var student = getData()
+        student![i].name = object["name"]
+        student![i].city = object["city"]
+        student![i].mobile = object["mobile"]
+        student![i].address = object["address"]
+        
+        do{
+            try context?.save()
+        }catch {
+            print("Data not edited.")
+        }
+    }
 }
